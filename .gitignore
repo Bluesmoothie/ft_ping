@@ -1,3 +1,5 @@
 ft_ping
 .build
 compile_commands.json
+.cache
+ref
