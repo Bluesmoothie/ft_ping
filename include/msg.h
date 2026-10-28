@@ -1,11 +1,13 @@
 #pragma once
 
-#define	MSG_HELP "\n\
-Utilisation\n\
-  ping [options] <destination>\n\
+#define	MSG_HELP "\
+Usage: ping [OPTION...] HOST ...\n\
+Send ICMP ECHO_REQUEST packets to network hosts.\n\
 \n\
-Options :\n\
-  <destination>      nom DNS ou adresse IP\n\
-  -v                 sortie verbeuse\n\
-  -?                 affiche ce message\n\
+  -v                         verbose output\n\
+  -?                         give this help list\n\
 "
+
+const char*	errors[] = {
+	"ping: missing host operand\nTry 'ping -?' for more information.\n"
+};

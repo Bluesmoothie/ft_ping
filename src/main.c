@@ -20,5 +20,11 @@ int	main(int argc, char** argv) {
 				break;
 		}
 	}
+
+	if (optind == argc) {
+		print_err(ERR_MISSHOST);
+		exit(EXIT_FAILURE);
+	}
+
 	return 0;
 }
