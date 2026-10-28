@@ -22,6 +22,7 @@ SRC_DIR         =   src/
 #           SRC
 SRC_FILES       =   main			\
 					msg				\
+					ping			\
 
 OBJ             =   $(addprefix $(BUILD_DIR), $(addsuffix .o, $(SRC_FILES)))
 DEPS            =   $(addprefix $(BUILD_DIR), $(addsuffix .d, $(SRC_FILES)))

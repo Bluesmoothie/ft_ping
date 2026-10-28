@@ -1,7 +1,7 @@
 #pragma once
 
 #define	MSG_HELP "\
-Usage: ping [OPTION...] HOST ...\n\
+Usage: ./ft_ping [OPTION...] HOST ...\n\
 Send ICMP ECHO_REQUEST packets to network hosts.\n\
 \n\
   -v                         verbose output\n\
@@ -9,5 +9,6 @@ Send ICMP ECHO_REQUEST packets to network hosts.\n\
 "
 
 const char*	errors[] = {
-	"ping: missing host operand\nTry 'ping -?' for more information.\n"
+	"missing host operand\nTry './ft_ping -?' for more information.\n",
+	"Name or service not known\n"
 };
